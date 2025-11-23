@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vamsidhar Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        /* Main loading screen styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Loading animation container - centers all loading elements */
+        .loading-container {
+            text-align: center;
+            color: white;
+        }
+        
+        /* Portfolio brand logo with fade-in animation */
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        /* Loading status text - appears after logo */
+        .loading-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        
+        /* Spinning loader animation - appears last */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+            opacity: 0;
+            /* Combines fade-in and spin animations */
+            animation: fadeInUp 1s ease-out 1s forwards, spin 1s linear 1s infinite;
+        }
+        
+        /* Smooth fade-in with upward slide animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Continuous rotation for loading spinner */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fvamsidhard1109back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body>
+    <!-- Main loading screen display -->
+    <div class="loading-container">
+        <div class="logo">Meegada Vamsidhar</div>
+        <div class="loading-text">Loading Portfolio...</div>
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        /**
+         * Portfolio Loading Screen Controller
+         * Handles the smooth transition from loading screen to main portfolio
+         */
+        
+        // Redirect user to main portfolio page after loading animation completes
+        setTimeout(function() {
+            window.location.href = 'pages/hero_landing_section.html';
+        }, 2500); // 2.5 second delay allows animations to complete
+        
+        /**
+         * Performance optimization: Preload the target page
+         * This ensures faster loading when user is redirected
+         */
+        const portfolioPageLink = document.createElement('link');
+        portfolioPageLink.rel = 'prefetch';
+        portfolioPageLink.href = 'pages/hero_landing_section.html';
+        document.head.appendChild(portfolioPageLink);
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

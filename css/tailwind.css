@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+/* Import Tailwind CSS utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Custom CSS Variables - Deep Space Professional Color Theme
+ * 
+ * This color scheme provides a professional, developer-friendly dark theme
+ * that's easy on the eyes and maintains excellent contrast ratios for accessibility
+ */
+:root {
+  /* === Primary Background Colors === */
+  --color-primary: #010409;          /* Deep space foundation - main background */
+  --color-secondary: #161B22;        /* Elevated content surfaces - cards, modals */
+  --color-background: #0D1117;       /* Subtle depth variation - alternate backgrounds */
+  --color-surface: #21262D;          /* Card backgrounds - raised content areas */
+  
+  /* === Accent and Interactive Colors === */
+  --color-accent: #00D9FF;           /* Electric cyan energy - primary call-to-action */
+  
+  /* === Text Colors for Hierarchy === */
+  --color-text-primary: #F0F6FC;     /* High contrast clarity - main content text */
+  --color-text-secondary: #8B949E;   /* Information hierarchy - secondary text */
+  
+  /* === Status and Feedback Colors === */
+  --color-success: #238636;          /* Achievement validation - success states */
+  --color-warning: #D29922;          /* Important notices - warning states */
+  --color-error: #DA3633;            /* Problem indication - error states */
+  
+  /* === Border and Separation === */
+  --color-border: #30363D;           /* Minimal separation - subtle borders */
+  
+  /* === Shadow System for Depth === */
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1);           /* Default card elevation */
+  --shadow-card-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1);   /* Hover state elevation */
+  
+  /* === Animation Timing System === */
+  --transition-fast: 200ms ease-out;     /* Quick interactions - hovers, clicks */
+  --transition-normal: 300ms ease-out;   /* Standard transitions - page elements */
+}
+
+/**
+ * Base Layer - Fundamental HTML element styling
+ * Sets up the foundation for the entire application
+ */
+@layer base {
+  /* Enable smooth scrolling for better user experience */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Global body styling with professional typography */
+  body {
+    font-family: 'Inter', sans-serif;              /* Modern, readable font */
+    background-color: var(--color-background);     /* Deep space background */
+    color: var(--color-text-primary);              /* High contrast text */
+    line-height: 1.6;                              /* Improved readability */
+  }
+  
+  /* Professional heading typography system */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;                               /* Semi-bold for emphasis */
+    line-height: 1.2;                              /* Tighter spacing for headings */
+  }
+  
+  /* Monospace font for code elements */
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;      /* Developer-friendly monospace */
+  }
+}
+
+/**
+ * Components Layer - Reusable UI component styles
+ * These classes provide consistent styling patterns throughout the application
+ */
+@layer components {
+  /* Primary action button - main call-to-action styling */
+  .btn-primary {
+    @apply bg-accent text-primary font-semibold px-6 py-3 rounded-lg 
+           transition-all duration-200 hover:bg-opacity-90 hover:shadow-card-hover;
+  }
+  
+  /* Secondary button - alternative action styling */
+  .btn-secondary {
+    @apply bg-surface text-text-primary font-semibold px-6 py-3 rounded-lg 
+           border border-border transition-all duration-200 
+           hover:bg-secondary hover:shadow-card;
+  }
+  
+  /* Standard card component with elevation and hover effects */
+  .card {
+    @apply bg-surface rounded-lg p-6 shadow-card 
+           transition-all duration-300 hover:shadow-card-hover;
+  }
+  
+  /* Consistent section padding for page layout */
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Maximum width container for content organization */
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  /* Gradient text effect for emphasis */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-text-primary bg-clip-text text-transparent;
+  }
+}
+
+/**
+ * Utilities Layer - Helper classes for common styling patterns
+ * Extends Tailwind's utility classes with custom design system utilities
+ */
+@layer utilities {
+  /* Custom shadow utilities using design system values */
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  
+  /* Transition utilities for consistent animation timing */
+  .transition-fast {
+    transition: all var(--transition-fast);
+  }
+  
+  .transition-normal {
+    transition: all var(--transition-normal);
+  }
+}
+
+/**
+ * Custom Animation Keyframes
+ * Professional animations that enhance user experience without being distracting
+ */
+
+/* Smooth fade-in with upward movement - used for element reveals */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle slide-up animation - used for content expansion */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slow pulse effect - used for subtle attention drawing */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/**
+ * Animation Utility Classes
+ * Ready-to-use animation classes for common effects
+ */
+
+/* Slow, subtle pulsing effect */
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Glowing effect for interactive elements */
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+/**
+ * Interactive Effects
+ * Hover and interaction states that provide user feedback
+ */
+
+/* Lift effect on hover - creates sense of elevation */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  transition: transform var(--transition-normal);
+}
+
+/**
+ * Glass Morphism Effect
+ * Modern frosted glass appearance for overlays and modal elements
+ */
+.glass {
+  backdrop-filter: blur(12px);                    /* Blur background content */
+  -webkit-backdrop-filter: blur(12px);            /* Safari support */
+  background: rgba(33, 38, 45, 0.8);             /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.1);    /* Subtle border highlight */
+}
