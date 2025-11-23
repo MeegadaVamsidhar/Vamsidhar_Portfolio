@@ -53,7 +53,7 @@ Follow these steps to get a local copy up and running:
 ## 🎨 How to Customize for Your Own Portfolio
 
 1.  **Update Personal Info:**
-    -   Go to `pages/hero_landing_section.html` and update your name, title, and bio.
+    -   Go to `index.html` and update your name, title, and bio.
     -   Update `pages/professional_connection_hub.html` with your contact details.
 
 2.  **Add Your Projects:**
