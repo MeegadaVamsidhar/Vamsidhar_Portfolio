@@ -613,7 +613,7 @@
                 <div>
                     <h3 class="font-semibold text-text-primary mb-4">Contact</h3>
                     <div class="space-y-2">
-                        <a href="meegadavamsi76@gmail.com"
+                        <a href="mailto:meegadavamsi76@gmail.com"
                             class="block text-text-secondary hover:text-accent transition-colors text-sm">
                             meegadavamsi76@gmail.com
                         </a>
@@ -641,10 +641,13 @@
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
+        // EmailJS Configuration - TODO: Replace with your actual keys from https://dashboard.emailjs.com/
+        const EMAILJS_PUBLIC_KEY = "Fyh34JVefCRQWtw_6-x";   // e.g., "user_..."
+        const EMAILJS_SERVICE_ID = "service_azdzyvl";   // e.g., "service_..."
+        const EMAILJS_TEMPLATE_ID = "template_q0lvqdw"; // e.g., "template_..."
+
         (function () {
-            // Initialize EmailJS with your Public Key
-            // TODO: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS Public Key
-            emailjs.init("YOUR_PUBLIC_KEY");
+            emailjs.init(EMAILJS_PUBLIC_KEY);
         })();
     </script>
 
@@ -695,8 +698,7 @@
             submitBtn.disabled = true;
 
             // Send email using EmailJS
-            // TODO: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS Service and Template IDs
-            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
                 .then(function () {
                     submitBtn.innerHTML = `
                         <span class="flex items-center justify-center">
