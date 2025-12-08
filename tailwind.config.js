@@ -1,6 +1,9 @@
 module.exports = {
   content: [
-    "./pages/*.{html,js}",
+    "./skills/*.{html,js}",
+    "./projects/*.{html,js}",
+    "./achievements/*.{html,js}",
+    "./contact/*.{html,js}",
     "./index.html",
     "./js/*.js",
     "./components/*.{html,js}"
@@ -15,16 +18,16 @@ module.exports = {
         background: "#0D1117", // Subtle depth variation
         surface: "#21262D", // Card backgrounds
         border: "#30363D", // Minimal separation
-        
+
         // Text Colors
         'text-primary': "#F0F6FC", // High contrast clarity
         'text-secondary': "#8B949E", // Information hierarchy
-        
+
         // Status Colors
         success: "#238636", // Achievement validation - green-600
         warning: "#D29922", // Important notices - yellow-600
         error: "#DA3633", // Problem indication - red-600
-        
+
         // Additional Shades for Flexibility
         gray: {
           50: "#F9FAFB",
