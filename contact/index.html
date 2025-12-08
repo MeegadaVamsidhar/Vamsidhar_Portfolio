@@ -37,7 +37,7 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Brand -->
                 <div class="flex items-center">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="text-xl font-bold text-accent hover:text-accent/80 transition-colors">
                         Meegada Vamsidhar
                     </a>
@@ -45,15 +45,15 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Home</a>
-                    <a href="technical_skills_showcase.html"
+                    <a href="../skills/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Skills</a>
-                    <a href="project_portfolio_theater.html"
+                    <a href="../projects/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Projects</a>
-                    <a href="achievements_credentials_gallery.html"
+                    <a href="../achievements/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Achievements</a>
-                    <a href="professional_connection_hub.html"
+                    <a href="index.html"
                         class="text-accent font-medium hover:text-accent/80 transition-colors">Contact</a>
                 </div>
 
@@ -71,16 +71,15 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="md:hidden hidden bg-secondary border-t border-border">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Home</a>
-                    <a href="technical_skills_showcase.html"
+                    <a href="../skills/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Skills</a>
-                    <a href="project_portfolio_theater.html"
+                    <a href="../projects/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Projects</a>
-                    <a href="achievements_credentials_gallery.html"
+                    <a href="../achievements/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Achievements</a>
-                    <a href="professional_connection_hub.html"
-                        class="block px-3 py-2 text-accent font-medium">Contact</a>
+                    <a href="index.html" class="block px-3 py-2 text-accent font-medium">Contact</a>
                 </div>
             </div>
         </div>
@@ -564,7 +563,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- Brand -->
                 <div class="lg:col-span-2">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="text-2xl font-bold text-accent hover:text-accent/80 transition-colors mb-4 block">
                         Vamsidhar
                     </a>
@@ -599,13 +598,13 @@
                 <div>
                     <h3 class="font-semibold text-text-primary mb-4">Quick Links</h3>
                     <div class="space-y-2">
-                        <a href="hero_landing_section.html"
+                        <a href="../index.html"
                             class="block text-text-secondary hover:text-accent transition-colors text-sm">Home</a>
-                        <a href="technical_skills_showcase.html"
+                        <a href="../skills/index.html"
                             class="block text-text-secondary hover:text-accent transition-colors text-sm">Skills</a>
-                        <a href="project_portfolio_theater.html"
+                        <a href="../projects/index.html"
                             class="block text-text-secondary hover:text-accent transition-colors text-sm">Projects</a>
-                        <a href="achievements_credentials_gallery.html"
+                        <a href="../achievements/index.html"
                             class="block text-text-secondary hover:text-accent transition-colors text-sm">Achievements</a>
                     </div>
                 </div>
@@ -639,6 +638,16 @@
         </div>
     </footer>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Initialize EmailJS with your Public Key
+            // TODO: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS Public Key
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -670,7 +679,7 @@
                 return;
             }
 
-            // Simulate form submission
+            // Show loading state
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
 
@@ -685,29 +694,37 @@
             `;
             submitBtn.disabled = true;
 
-            // Simulate API call
-            setTimeout(() => {
-                submitBtn.innerHTML = `
-                    <span class="flex items-center justify-center">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                        </svg>
-                        Message Sent!
-                    </span>
-                `;
+            // Send email using EmailJS
+            // TODO: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS Service and Template IDs
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function () {
+                    submitBtn.innerHTML = `
+                        <span class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Message Sent!
+                        </span>
+                    `;
 
-                // Reset form
-                contactForm.reset();
+                    // Reset form
+                    contactForm.reset();
 
-                // Show success message
-                alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+                    // Show success message
+                    alert('Thank you for your message! I\'ll get back to you within 24 hours.');
 
-                // Reset button after 3 seconds
-                setTimeout(() => {
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                }, function (error) {
+                    console.error('FAILED...', error);
+                    alert('Failed to send message. Please try again later or contact me directly via email.');
+
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
-                }, 3000);
-            }, 2000);
+                });
         });
 
         // Add scroll effect to navigation

@@ -54,15 +54,15 @@ Follow these steps to get a local copy up and running:
 
 1.  **Update Personal Info:**
     -   Go to `index.html` and update your name, title, and bio.
-    -   Update `pages/professional_connection_hub.html` with your contact details.
+    -   Update `contact/index.html` with your contact details.
 
 2.  **Add Your Projects:**
-    -   Edit `pages/project_portfolio_theater.html`.
+    -   Edit `projects/index.html`.
     -   Replace the existing project cards with your own project details, images, and GitHub links.
 
 3.  **Update Skills & Achievements:**
-    -   Modify `pages/technical_skills_showcase.html` to reflect your tech stack.
-    -   Update `pages/achievements_credentials_gallery.html` with your certifications and timeline.
+    -   Modify `skills/index.html` to reflect your tech stack.
+    -   Update `achievements/index.html` with your certifications and timeline.
 
 4.  **Change Images:**
     -   Replace the placeholder images in the `img` folder or update the `src` attributes in the HTML files with your own images.
@@ -76,13 +76,16 @@ Follow these steps to get a local copy up and running:
 ```
 vamsidhar_portfolio/
 ├── css/
-│   ├── tailwind.css   # Tailwind source file
-│   └── main.css       # Compiled CSS
-├── pages/             # Individual HTML pages for sections
-├── public/            # Static assets (images, icons)
-├── index.html         # Main entry point (Loading screen)
-├── package.json       # Dependencies and scripts
-└── tailwind.config.js # Tailwind configuration
+│   ├── tailwind.css     # Tailwind source file
+│   └── main.css         # Compiled CSS
+├── skills/              # Skills page
+├── projects/            # Projects page
+├── achievements/        # Achievements page
+├── contact/             # Contact page
+├── public/              # Static assets (images, icons)
+├── index.html           # Main entry point (Landing Page)
+├── package.json         # Dependencies and scripts
+└── tailwind.config.js   # Tailwind configuration
 ```
 
 ## 🤝 Contributing

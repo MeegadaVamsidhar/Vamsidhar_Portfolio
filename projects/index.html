@@ -37,7 +37,7 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Brand -->
                 <div class="flex items-center">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="text-xl font-bold text-accent hover:text-accent/80 transition-colors">
                         Vamsidhar Reddy
                     </a>
@@ -45,15 +45,15 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Home</a>
-                    <a href="technical_skills_showcase.html"
+                    <a href="../skills/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Skills</a>
-                    <a href="project_portfolio_theater.html"
+                    <a href="index.html"
                         class="text-accent font-medium hover:text-accent/80 transition-colors">Projects</a>
-                    <a href="achievements_credentials_gallery.html"
+                    <a href="../achievements/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Achievements</a>
-                    <a href="professional_connection_hub.html"
+                    <a href="../contact/index.html"
                         class="text-text-secondary hover:text-text-primary transition-colors">Contact</a>
                 </div>
 
@@ -71,15 +71,14 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="md:hidden hidden bg-secondary border-t border-border">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="hero_landing_section.html"
+                    <a href="../index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Home</a>
-                    <a href="technical_skills_showcase.html"
+                    <a href="../skills/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Skills</a>
-                    <a href="project_portfolio_theater.html"
-                        class="block px-3 py-2 text-accent font-medium">Projects</a>
-                    <a href="achievements_credentials_gallery.html"
+                    <a href="index.html" class="block px-3 py-2 text-accent font-medium">Projects</a>
+                    <a href="../achievements/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Achievements</a>
-                    <a href="professional_connection_hub.html"
+                    <a href="../contact/index.html"
                         class="block px-3 py-2 text-text-secondary hover:text-text-primary transition-colors">Contact</a>
                 </div>
             </div>
@@ -180,13 +179,118 @@
             <!-- Projects Masonry Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
 
-                <!-- Project 1: AI Voice Assistant -->
-                <div class="project-card fullstack group" data-category="fullstack">
+                <!-- Project 1: Real-Time Chat App -->
+                <div class="project-card fullstack group h-full" data-category="fullstack">
                     <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
+                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105 h-full flex flex-col">
                         <!-- Project Image -->
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2940&auto=format&fit=crop"
+                        <div class="relative h-48 overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=2940&auto=format&fit=crop"
+                                alt="Real-Time Chat Application"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy"
+                                onerror="this.src='https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+
+                            <!-- Project Status Badge -->
+                            <div class="absolute top-4 right-4">
+                                <span
+                                    class="px-3 py-1 bg-success/20 text-success text-xs font-semibold rounded-full border border-success/30 backdrop-blur-sm">
+                                    Completed
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Project Content -->
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
+                                    Real-Time Chat App
+                                </h3>
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+                                        <path
+                                            d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Timeline -->
+                            <div class="flex items-center gap-2 mb-4 text-text-secondary text-xs">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>Recent Project</span>
+                            </div>
+
+                            <!-- Technology Stack -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">MERN
+                                    Stack</span>
+                                <span
+                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Socket.io</span>
+                                <span
+                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">React</span>
+                            </div>
+
+                            <!-- Problem Statement -->
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
+                                <p class="text-sm text-text-secondary leading-relaxed">
+                                    Developed a real-time chat platform with secure authentication and persistent
+                                    message history.
+                                </p>
+                            </div>
+
+                            <!-- Solution Approach -->
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
+                                <p class="text-sm text-text-secondary leading-relaxed">
+                                    Built with React, Node.js, and Socket.io for bidirectional communication and MongoDB
+                                    for storage.
+                                </p>
+                            </div>
+
+                            <!-- Key Learnings -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
+                                <p class="text-sm text-text-secondary leading-relaxed">
+                                    Gained expertise in WebSocket protocols, real-time data handling, and full-stack
+                                    state management.
+                                </p>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3 mt-auto">
+                                <a href="https://github.com/MeegadaVamsidhar/Real-Time-Chat-Application" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
+                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: AI Voice Assistant -->
+                <div class="project-card fullstack group h-full" data-category="fullstack">
+                    <div
+                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105 h-full flex flex-col">
+                        <!-- Project Image -->
+                        <div class="relative h-48 overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2940&auto=format&fit=crop"
                                 alt="AI Voice Assistant Interface"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 loading="lazy"
@@ -212,7 +316,7 @@
                         </div>
 
                         <!-- Project Content -->
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <div class="flex items-center justify-between mb-4">
                                 <h3
                                     class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
@@ -253,9 +357,8 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Building a voice-enabled AI assistant specialized for sales conversations, capable
-                                    of handling real-time objections, understanding context, and driving engagement
-                                    using Large Language Models.
+                                    Designed a voice-enabled AI assistant for handling dynamic sales conversations and
+                                    objections.
                                 </p>
                             </div>
 
@@ -263,9 +366,8 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Implementing speech recognition and synthesis with LLM integration to create natural
-                                    conversational experiences. Developing context-aware response generation and
-                                    multi-turn dialogue management using TypeScript.
+                                    Integrated LLMs with speech synthesis/recognition in TypeScript for natural,
+                                    context-aware dialogue.
                                 </p>
                             </div>
 
@@ -273,14 +375,13 @@
                             <div class="mb-6">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Gained hands-on experience with Large Language Models, voice processing
-                                    technologies, and real-time AI application development. Enhanced understanding of
-                                    conversational AI architectures.
+                                    Mastered LLM integration, voice processing pipelines, and real-time AI application
+                                    architecture.
                                 </p>
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="flex gap-3">
+                            <div class="flex gap-3 mt-auto">
                                 <a href="https://github.com/MeegadaVamsidhar/AI-Sales-Call-Assistant-For-Conversation"
                                     target="_blank" rel="noopener noreferrer"
                                     class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
@@ -296,13 +397,13 @@
                     </div>
                 </div>
 
-                <!-- Project 2: File Sharing System -->
-                <div class="project-card collaborative group" data-category="collaborative">
+                <!-- Project 3: File Sharing System -->
+                <div class="project-card collaborative group h-full" data-category="collaborative">
                     <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
+                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105 h-full flex flex-col">
                         <!-- Project Image -->
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2940&auto=format&fit=crop"
+                        <div class="relative h-48 overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2940&auto=format&fit=crop"
                                 alt="File Sharing System Interface"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 loading="lazy"
@@ -328,7 +429,7 @@
                         </div>
 
                         <!-- Project Content -->
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <div class="flex items-center justify-between mb-4">
                                 <h3
                                     class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
@@ -368,8 +469,7 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Developed a secure multi-client file sharing system in C for Operating Systems
-                                    course. Required implementing user authentication, concurrent file transfers, and
+                                    Created a secure, multi-client file transfer system supporting concurrent users and
                                     resumable downloads.
                                 </p>
                             </div>
@@ -378,9 +478,8 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Built using TCP sockets and POSIX threads to handle concurrent clients. Implemented
-                                    public/private file sharing mechanisms with user authentication and real-time
-                                    progress tracking. Supports resumable downloads for interrupted transfers.
+                                    Implemented using C, TCP sockets, and POSIX threads to handle concurrency and secure
+                                    data transfer.
                                 </p>
                             </div>
 
@@ -388,14 +487,13 @@
                             <div class="mb-6">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Mastered client-server architecture, socket programming, thread synchronization, and
-                                    concurrent programming. Gained practical experience in low-level system programming
-                                    and network protocols.
+                                    Deepened knowledge of socket programming, thread synchronization, and low-level
+                                    network protocols.
                                 </p>
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="flex gap-3">
+                            <div class="flex gap-3 mt-auto">
                                 <a href="https://github.com/MeegadaVamsidhar/File_Sharing_System_OS" target="_blank"
                                     rel="noopener noreferrer"
                                     class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
@@ -411,13 +509,13 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Spotify Clone -->
-                <div class="project-card fullstack group" data-category="fullstack">
+                <!-- Project 4: Spotify Clone -->
+                <div class="project-card fullstack group h-full" data-category="fullstack">
                     <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
+                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105 h-full flex flex-col">
                         <!-- Project Image -->
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=2948&auto=format&fit=crop"
+                        <div class="relative h-48 overflow-hidden flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=2940&auto=format&fit=crop"
                                 alt="Spotify Clone Interface"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 loading="lazy"
@@ -436,7 +534,7 @@
                         </div>
 
                         <!-- Project Content -->
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-grow">
                             <div class="flex items-center justify-between mb-4">
                                 <h3
                                     class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
@@ -474,8 +572,8 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Recreating the complex and responsive user interface of the Spotify web player to
-                                    master modern frontend layout techniques and design principles.
+                                    Recreated Spotify's complex, responsive interface to master modern frontend
+                                    engineering.
                                 </p>
                             </div>
 
@@ -483,8 +581,8 @@
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Utilized semantic HTML5 and advanced CSS3 features including Flexbox and Grid to
-                                    build a pixel-perfect, responsive replica of the music streaming interface.
+                                    Utilized HTML5, CSS Grid/Flexbox to build a pixel-perfect, fully responsive web
+                                    application.
                                 </p>
                             </div>
 
@@ -492,14 +590,14 @@
                             <div class="mb-6">
                                 <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
                                 <p class="text-sm text-text-secondary leading-relaxed">
-                                    Deepened understanding of responsive web design, CSS architecture, and
-                                    component-based styling while replicating a production-grade UI.
+                                    Refined skills in advanced CSS architecture, responsive design patterns, and
+                                    component styling.
                                 </p>
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <a href="https://github.com/MeegadaVamsidhar/Spotify_Clone" target="_blank"
+                            <div class="flex gap-3 mt-auto">
+                                <a href="https://github.com/MeegadaVamsidhar/Music_Mine-A_Spotify_Clone" target="_blank"
                                     rel="noopener noreferrer"
                                     class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
                                     <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"
@@ -513,305 +611,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 4: Smart Campus Navigator - HIDDEN -->
-                <!--
-                <div style="display: none;" class="project-card fullstack group" data-category="fullstack">
-                    <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Smart Campus Navigator Interface"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                loading="lazy"
-                                onerror="this.src='https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            </div>
-
-                            <div class="absolute top-4 right-4">
-                                <span
-                                    class="px-3 py-1 bg-success/20 text-success text-xs font-semibold rounded-full border border-success/30 backdrop-blur-sm">
-                                    Mobile App
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <h3
-                                    class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
-                                    CampusNav Smart
-                                </h3>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">React
-                                    Native</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Python</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Django</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">PostgreSQL</span>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Developed a smart campus navigation app for NIT Durgapur with indoor mapping, event
-                                    notifications, mess menu tracking, and academic schedule integration.
-                                </p>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Built cross-platform mobile app with React Native, implemented indoor positioning
-                                    using beacons, created Django REST API backend, and integrated with college ERP
-                                    system.
-                                </p>
-                            </div>
-
-                            <div class="mb-6">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Mastered mobile app development, location-based services, API integration, and user
-                                    experience design for mobile platforms. Learned beacon technology implementation.
-                                </p>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                    </svg>
-                                    App Demo
-                                </a>
-                                <a href="https://github.com/vamsidhar/campusnav-smart" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-transparent border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-primary transition-all duration-300 group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"
-                                        fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-                <!-- Project 5: Data Structure Library - HIDDEN -->
-                <!--
-                <div style="display: none;" class="project-card algorithms group" data-category="algorithms">
-                    <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="Data Structure Library Interface"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            </div>
-
-                            <div class="absolute top-4 right-4">
-                                <span
-                                    class="px-3 py-1 bg-success/20 text-success text-xs font-semibold rounded-full border border-success/30 backdrop-blur-sm">
-                                    Library
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <h3
-                                    class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
-                                    DataStruct++
-                                </h3>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">C++</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Templates</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">STL</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">CMake</span>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Created a comprehensive C++ library implementing advanced data structures with
-                                    optimized performance, extensive documentation, and unit testing suite.
-                                </p>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Implemented 15+ data structures using modern C++ features, created template-based
-                                    generic implementations, and established comprehensive testing framework with 95%
-                                    code coverage.
-                                </p>
-                            </div>
-
-                            <div class="mb-6">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Mastered advanced C++ concepts, template metaprogramming, memory management, and
-                                    software engineering best practices including documentation and testing.
-                                </p>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                    </svg>
-                                    Documentation
-                                </a>
-                                <a href="https://github.com/vamsidhar/datastruct-plus-plus" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-transparent border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-primary transition-all duration-300 group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"
-                                        fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-
-                <!-- Project 6: AI-Powered Code Review - HIDDEN -->
-                <!--
-                <div style="display: none;" class="project-card fullstack group" data-category="fullstack">
-                    <div
-                        class="bg-surface rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500 hover:scale-105">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg"
-                                alt="AI-Powered Code Review Interface"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                loading="lazy"
-                                onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            </div>
-
-                            <div class="absolute top-4 right-4">
-                                <span
-                                    class="px-3 py-1 bg-warning/20 text-warning text-xs font-semibold rounded-full border border-warning/30 backdrop-blur-sm">
-                                    AI/ML
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="p-6">
-                            <div class="flex items-center justify-between mb-4">
-                                <h3
-                                    class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
-                                    CodeReview AI
-                                </h3>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Python</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">TensorFlow</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">FastAPI</span>
-                                <span
-                                    class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded border border-accent/20">Docker</span>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Problem Statement:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Developed an AI-powered code review system that automatically detects bugs, suggests
-                                    improvements, and enforces coding standards using machine learning models.
-                                </p>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Solution Approach:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Built ML models using TensorFlow for code analysis, created REST API with FastAPI,
-                                    integrated with GitHub webhooks, and deployed using Docker containers with 85%
-                                    accuracy.
-                                </p>
-                            </div>
-
-                            <div class="mb-6">
-                                <h4 class="text-sm font-semibold text-text-primary mb-2">Key Learnings:</h4>
-                                <p class="text-sm text-text-secondary leading-relaxed">
-                                    Gained expertise in MLOps, containerization, API development, and integrating AI
-                                    models into production software workflows.
-                                </p>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <a href="javascript:void(0)"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-glow group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                    </svg>
-                                    Try AI Demo
-                                </a>
-                                <a href="https://github.com/vamsidhar/codereview-ai" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex-1 inline-flex items-center justify-center px-4 py-2 bg-transparent border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-primary transition-all duration-300 group">
-                                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform"
-                                        fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
             </div>
 
             <!-- Load More Projects Button -->
@@ -870,21 +669,29 @@
         <div class="container-max px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-6">
-                    <a href="hero_landing_section.html" class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Home</a>
-                    <a href="technical_skills_showcase.html" class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Skills</a>
-                    <a href="achievements_credentials_gallery.html" class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Achievements</a>
-                    <a href="professional_connection_hub.html" class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Contact</a>
+                    <a href="hero_landing_section.html"
+                        class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Home</a>
+                    <a href="technical_skills_showcase.html"
+                        class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Skills</a>
+                    <a href="achievements_credentials_gallery.html"
+                        class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Achievements</a>
+                    <a href="professional_connection_hub.html"
+                        class="text-text-secondary hover:text-accent transition-colors text-sm font-medium">Contact</a>
                 </div>
-                
+
                 <div class="flex items-center gap-4">
-                    <a href="https://github.com/MeegadaVamsidhar" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-colors">
+                    <a href="https://github.com/MeegadaVamsidhar" target="_blank" rel="noopener noreferrer"
+                        class="text-text-secondary hover:text-accent transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/meegada-vamsidhar-reddy-2323902b3" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-colors">
+                    <a href="https://www.linkedin.com/in/meegada-vamsidhar-reddy-2323902b3" target="_blank"
+                        rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-colors">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                     </a>
                 </div>
