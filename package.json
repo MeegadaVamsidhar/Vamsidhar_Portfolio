@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css",
+    "build": "npm run build:css",
     "watch:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --watch",
     "dev": "npm run watch:css"
   },
