@@ -11,22 +11,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Deep Space Professional Theme
-        primary: "#010409", // Deep space foundation
-        secondary: "#161B22", // Elevated content surfaces
-        accent: "#00D9FF", // Electric cyan energy
-        background: "#0D1117", // Subtle depth variation
-        surface: "#21262D", // Card backgrounds
-        border: "#30363D", // Minimal separation
+        // Deep Premium Slate & Sky Theme
+        primary: "#020617", // slate-950, deep rich space
+        secondary: "#0f172a", // slate-900, elevated surfaces
+        accent: "#38bdf8", // sky-400, vibrant electric blue
+        background: "#000000", // true black background for contrast
+        surface: "#1e293b", // slate-800, card backgrounds
+        border: "#334155", // slate-700, minimal separation
 
         // Text Colors
-        'text-primary': "#F0F6FC", // High contrast clarity
-        'text-secondary': "#8B949E", // Information hierarchy
+        'text-primary': "#f8fafc", // slate-50, peak clarity
+        'text-secondary': "#94a3b8", // slate-400, muted hierarchy
 
         // Status Colors
-        success: "#238636", // Achievement validation - green-600
-        warning: "#D29922", // Important notices - yellow-600
-        error: "#DA3633", // Problem indication - red-600
+        success: "#10b981", // emerald-500
+        warning: "#f59e0b", // amber-500
+        error: "#f43f5e", // rose-500
 
         // Additional Shades for Flexibility
         gray: {
@@ -69,7 +69,7 @@ module.exports = {
       boxShadow: {
         'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
         'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-        'glow': '0 0 20px rgba(0, 217, 255, 0.3)',
+        'glow': '0 0 20px rgba(56, 189, 248, 0.3)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',

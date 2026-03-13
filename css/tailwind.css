@@ -14,22 +14,22 @@
  */
 :root {
   /* === Primary Background Colors === */
-  --color-primary: #010409;          /* Deep space foundation - main background */
-  --color-secondary: #161B22;        /* Elevated content surfaces - cards, modals */
-  --color-background: #0D1117;       /* Subtle depth variation - alternate backgrounds */
-  --color-surface: #21262D;          /* Card backgrounds - raised content areas */
+  --color-primary: #020617;          /* slate-950, deep rich space */
+  --color-secondary: #0f172a;        /* slate-900, elevated surfaces */
+  --color-background: #000000;       /* true black background for contrast */
+  --color-surface: #1e293b;          /* slate-800, card backgrounds */
   
   /* === Accent and Interactive Colors === */
-  --color-accent: #00D9FF;           /* Electric cyan energy - primary call-to-action */
+  --color-accent: #38bdf8;           /* sky-400, vibrant electric blue */
   
   /* === Text Colors for Hierarchy === */
-  --color-text-primary: #F0F6FC;     /* High contrast clarity - main content text */
-  --color-text-secondary: #8B949E;   /* Information hierarchy - secondary text */
+  --color-text-primary: #f8fafc;     /* slate-50, peak clarity */
+  --color-text-secondary: #94a3b8;   /* slate-400, muted hierarchy */
   
   /* === Status and Feedback Colors === */
-  --color-success: #238636;          /* Achievement validation - success states */
-  --color-warning: #D29922;          /* Important notices - warning states */
-  --color-error: #DA3633;            /* Problem indication - error states */
+  --color-success: #10b981;          /* emerald-500 */
+  --color-warning: #f59e0b;          /* amber-500 */
+  --color-error: #f43f5e;            /* rose-500 */
   
   /* === Border and Separation === */
   --color-border: #30363D;           /* Minimal separation - subtle borders */
@@ -189,7 +189,7 @@
 
 /* Glowing effect for interactive elements */
 .shadow-glow {
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
 }
 
 /**
