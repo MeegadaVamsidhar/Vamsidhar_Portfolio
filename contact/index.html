@@ -643,9 +643,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         // EmailJS Configuration - TODO: Replace with your actual keys from https://dashboard.emailjs.com/
-        const EMAILJS_PUBLIC_KEY = "Fyh34JVefCRQWtw_6-x";   // e.g., "user_..."
-        const EMAILJS_SERVICE_ID = "service_azdzyvl";   // e.g., "service_..."
-        const EMAILJS_TEMPLATE_ID = "template_q0lvqdw"; // e.g., "template_..."
+        const EMAILJS_PUBLIC_KEY = "PrtNx4nYQl_hu7ww3";
+        const EMAILJS_SERVICE_ID = "service_5ad2acg";
+        const EMAILJS_TEMPLATE_ID = "template_qqhofs1";
 
         (function () {
             emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -698,8 +698,8 @@
             `;
             submitBtn.disabled = true;
 
-            // Send email using EmailJS
-            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+            // Send email using EmailJS explicitly passing the form and public key
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm, EMAILJS_PUBLIC_KEY)
                 .then(function () {
                     submitBtn.innerHTML = `
                         <span class="flex items-center justify-center">
@@ -723,7 +723,8 @@
                     }, 3000);
                 }, function (error) {
                     console.error('FAILED...', error);
-                    alert('Failed to send message. Please try again later or contact me directly via email.');
+                    const errorMsg = error.text || error.message || 'Unknown Error';
+                    alert('Failed to send message. Error: ' + errorMsg + '\nPlease check your EmailJS dashboard keys in the code or contact me directly via email.');
 
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;

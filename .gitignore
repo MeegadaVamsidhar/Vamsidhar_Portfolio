@@ -1,0 +1,14 @@
+# Node & NPM
+node_modules/
+npm-debug.log*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test and Sensitive Files
+test-emailjs.js
