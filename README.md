@@ -15,6 +15,10 @@ It is built using **HTML5**, **Tailwind CSS**, and **JavaScript**, designed to b
 -   **Contact Form**: Integrated contact section for potential employers or collaborators.
 -   **Easy Customization**: Built with Tailwind CSS, making it simple to change colors, fonts, and layout.
 
+The landing page is a single responsive developer workspace at `index.html`. The legacy
+`skills/`, `projects/`, `achievements/`, and `contact/` routes remain available and redirect
+back to the corresponding landing-page sections.
+
 ## 🛠️ Tech Stack
 
 -   **HTML5**: Semantic structure.
@@ -48,7 +52,14 @@ Follow these steps to get a local copy up and running:
     ```bash
     npm run dev
     ```
-    Open `index.html` or the local server URL in your browser to view the portfolio.
+    Open `http://localhost:3000` in your browser to view the portfolio.
+
+## Deploy to Vercel
+
+1. Import the repository in [Vercel](https://vercel.com/new).
+2. Set the project root to `vamsidhar_portfolio` if importing the parent folder.
+3. Use `npm run build` as the build command and leave the output directory empty.
+4. Deploy. Vercel serves the static `index.html` and the existing subroutes directly.
 
 ## 🎨 How to Customize for Your Own Portfolio
 
@@ -57,7 +68,7 @@ Follow these steps to get a local copy up and running:
     -   Update `contact/index.html` with your contact details.
 
 2.  **Add Your Projects:**
-    -   Edit `projects/index.html`.
+    -   Edit the Projects section in `index.html`.
     -   Replace the existing project cards with your own project details, images, and GitHub links.
 
 3.  **Update Skills & Achievements:**
@@ -76,8 +87,7 @@ Follow these steps to get a local copy up and running:
 ```
 vamsidhar_portfolio/
 ├── css/
-│   ├── tailwind.css     # Tailwind source file
-│   └── main.css         # Compiled CSS
+│   └── main.css         # Site styles
 ├── skills/              # Skills page
 ├── projects/            # Projects page
 ├── achievements/        # Achievements page
